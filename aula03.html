@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Curso de HTML5">
+    <meta name="author" content="Brenno Alencar">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <title>Curso HTML5</title>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header style="text-align: center;">
+        <h1>Tudo sobre a linguagem HTML5</h1>
+        <p>Venha aprender HTML5 com profundidade, explorando as principais Tags e conceitos da linguagem.</p>
+        <hr>
+        <nav>
+            <a href="https://github.com/BrennoAlenkar" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/brenno_alencaar/?theme=dark" target="_blank">Instagram</a>
+            <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+            <a href="https://google.com.br" target="_blank">Google</a>
+            <a href="semantico.html" target="_parent">Nossa página</a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img style="width: 50px;"
+                    src="img/logo-js.webp" alt=""></a>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--Section 1: Textos e formatação-->
+        <section>
+            <h2>Textos e formatação</h2>
+            <p>Lorem ipsum, dolor sit amet<strong> O HTML é uma linguagem de marcação!</strong> consectetur adipisicing
+                elit. Minima, reprehenderit at,<em> Veremos também a linguagem CSS3</em> eligendi <mark>corrupti
+                    distinctio</mark> obcaecati <cite>Brenno Alencar</cite> accusantium in tempore aut saepe,<q> é muito
+                    importante aprender HTML5 e CSS3</q> amet exercitationem beatae cumque ad ipsum? <u>Corporis ad
+                    laudantium</u> mollitia. <strong>JavaScript</strong> Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Voluptatum saepe incidunt reiciendis nemo. Tempora <abbr
+                    title="Linguagem de Marcação de Hiper Texto">HTML5,</abbr> <abbr
+                    title="Folhas de estilo em cascata">CSS3,</abbr> <abbr
+                    title="Linguagem de programação">JavaScript</abbr> rerum autem quibusdam tempore officia est minus
+                provident maiores rem <u>quis ex nesciunt,</u> perspiciatis dolorem placeat.</p>
+            <h3>Tudo sobre o HTML5</h3>
+            <p>Lorem ipsum dolor sit, <strong>amet consectetur adipisicing</strong> elit.
+            <blockquote>Fugiat inventore itaque et sint? Nulla vero molestiae,</blockquote> possimus reprehenderit
+            doloremque nesciunt facilis veniam <em>excepturi repudiandae</em> et beatae provident ipsa expedita
+            laudantium?</p>
+            <h3>Conheça a historia do HTML5</h3>
+            <p>Lorem ipsum dolor <q>sit amet consectetur,</q> adipisicing elit. Minus corrupti earum eaque perferendis!
+                Reiciendis corporis, consectetur praesentium cumque <abbr title="Jesus Cristo">voluptatum</abbr> culpa
+                quisquam atque unde laboriosam exercitationem quasi totam amet <del>dolorum nobis.</del> Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Obcaecati expedita quo error, voluptates fugiat tempora id
+                totam ad in et explicabo voluptatibus quasi optio sapiente neque unde iste assumenda sint.</p>
+            <h2>Explicando algumas Tags</h2>
+            <p>o HTML5 foi criado em<del> 2012 </del>1990</p>
+            <p>Elevado a<sup> 10: Abaixo <sub>2</sub></sup></p>
+            <p>Eu mora na rua
+            <address>Helio franca, quadra 8 lote 23, casa 1</address>
+            </p>
+            <!--Artigo sobre css-->
+            <article>
+                <h3>Sobre o CCS3</h3>
+                <p>Linguagem de estilização</p>
+                <img style="width: 200px;" src="img/logo-css.png" alt="Logo do CSS3">
+            </article>
+        </section>
+
+        <br>
+        <!--Section 2: Inputs login-->
+        <section>
+            <h2>Inputs e tipos de entradas de usuarios</h2>
+            <form action="">
+                <fieldset style="width: 300px;">
+                    <legend>Login</legend>
+                    <label for="section2_nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" name="Section2" id="section2_nome" required>
+                    <br>
+                    <br>
+                    <label for="section2_email">E-mail:</label>
+                    <input type="email" placeholder="Digite seu nome" name="Section2" id="section2_email" required>
+                    <br>
+                    <br>
+                    <label for="section2_senha">Senha:</label>
+                    <input type="password" placeholder="Digite seu nome" name="Section2" id="section2_senha" required>
+                    <br>
+                    <br>
+                    <input type="checkbox" name="Section2" id="section2_confirmacao" required>
+                    <label for="section2_confirmacao">Aceita os termos de contratação?</label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+            <br>
+        </section>
+
+        <!--Section 3: Input radio-->
+        <section>
+            <h2>Section 3: Escolha quak dessas linguagens é a linguagem de marcação para estruturar sites na web</h2>
+            <form action="">
+                <input type="radio" name="Section3" value="JavaScript" id="section3a">
+                <label for="section3a">JavaScript</label>
+                <br>
+                <input type="radio" name="Section3" value="CSS3" id="section3b">
+                <label for="section3b">CSS3</label>
+                <br>
+                <input type="radio" name="Section3" value="HTML5" id="section3c">
+                <label for="section3c">HTML5</label>
+                <br>
+                <input type="radio" name="Section3" value="Java" id="section3d">
+                <label for="section3d">Java</label>
+                <br>
+            </form>
+        </section>
+
+        <!--Section 4: Input checkbox, Mulptipla escolha-->
+        <section>
+            <h2>Section 4: Marque qual dessas linguagens são linguagens de programação</h2>
+            <form action="">
+                <input type="checkbox" name="Section4" value="HTML5" id="section4a">
+                <label for="section4a">HTML5</label>
+                <br>
+                <input type="checkbox" name="Section4" value="CSS3" id="section4b">
+                <label for="section4b">CSS3</label>
+                <br>
+                <input type="checkbox" name="Section4" value="JavaScript" id="section4c">
+                <label for="section4c">JavaScript</label>
+                <br>
+                <input type="checkbox" name="Section4" value="Node" id="section4d">
+                <label for="section4d">Node.js</label>
+                <br>
+                <input type="checkbox" name="Section4" value="PHP" id="section4e">
+                <label for="section4e">PHP</label>
+                <br>
+            </form>
+        </section>
+
+        <!--Section 5: Input data-->
+        <section>
+            <h2>Section 5: Em qual ano a linguagem HTML5 foi criada?</h2>
+            <form action="">
+                <label for="section5a">DIgite a data:</label>
+                <input type="date" name="Section5" id="section5a">
+            </form>
+        </section>
+
+        <!--Section 6: textarea-->
+        <section>
+            <h2>Section 6: Deixei um comentario do que você aprendeu até agora sobre HTML5 e desenvolvimento web</h2>
+            <form>
+                <textarea style="width: 200px;" name="Section6" placeholder="Deixe seu comentario" rows="5"
+                    id="section6a"></textarea>
+            </form>
+        </section>
+
+        <!--Section 7: Select Options-->
+        <section>
+            <h2>Section 7: Selecione a sua linguagem de programação preferida</h2>
+            <form action="">
+                <label for="section7">Escolha uma das opçoes:</label>
+                <select name="Section7" id="section7" required>
+                    <option selected disabled value="">Selecionar</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="Java">Java</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="Node.js">Node.js</option>
+                    <option value="Php">Php</option>
+                    <option value="Go">Go</option>
+                </select>
+            </form>
+        </section>
+
+        <!--Section 8: input file-->
+        <section>
+            <h2>Section 8: Faça o uploud de um arquivo HTML5, e aprenda mais!</h2>
+            <form action="">
+                <label for="section8">Faça o uploud do arquivo:</label>
+                <input type="file" name="Section8" id="section8a">
+            </form>
+        </section>
+
+        <!--Section 9: Input color-->
+        <section>
+            <h2>Section 9: Selecione a cor da linguagem de acordo com o nome</h2>
+            <form action="">
+                <input type="color" name="Section9" id="section9a" required>
+                <label for="section9a">HTML5</label>
+                <br>
+                <input type="color" name="Section9" id="section9b" required>
+                <label for="section9b">JavaScript</label>
+                <br>
+                <input type="color" name="Section9" id="section9c" required>
+                <label for="section9c">CSS3</label>
+                <br>
+                <input type="color" name="Section9" id="section9d" required>
+                <label for="section9d">Php</label>
+                <br>
+                <input type="color" name="Section9" id="section9e" required>
+                <label for="section9e">Java</label>
+                <br>
+            </form>
+        </section>
+
+        <!--Section 10: imagens-->
+        <section>
+            <h2>Section 10: Algumas imagens de linguagens de desenvolvimento web</h2>
+            <!--imagem tipo jpg-->
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsPZszZWcmpDbllZ-87GoUHtp29ZXvacC5cQ&s"
+                    alt="Imagem da linguagem HTML5" style="width: 500px;">
+                <figcaption>Imagem de Programação</figcaption>
+            </figure>
+
+            <!--imagem tipo png-->
+            <h3>Imagens png: fundo trasnparente</h3>
+            <img src="img/logo-html.png" width="100px" alt="Imagem HTML5 png">
+            <img src="img/logo-java.png" width="100px" alt="Imagem Java png">
+            <img src="img/logo-js.webp" width="100px" alt="Imagem JavaScript png">
+            <img src="img/logo-php.png" width="100px" alt="Imagem Php png">
+
+            <img src="img/logo_node.png" width="100px" alt="Imagem node.js">
+
+        </section>
+
+        <!--Seciton 11: Tabelas-->
+        <section>
+            <h2>Section 11: Tabelas de linguagens e ferramentas</h2>
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Linguagem</th>
+                    <th>Framework</th>
+                    <th>Biblioteca</th>
+                    <th>Ferramenta</th>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Angular</td>
+                    <td>React</td>
+                    <td>VS Code</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>Django</td>
+                    <td>Pandas</td>
+                    <td>Git</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Spring</td>
+                    <td>JUnit</td>
+                    <td>Maven</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>Laravel</td>
+                    <td>PHPMailer</td>
+                    <td>XAMPP</td>
+                </tr>
+                <tr>
+                    <td>HTML5</td>
+                    <td>Bootstrap</td>
+                    <td>jQuery</td>
+                    <td>Figma</td>
+                </tr>
+                <tr>
+                    <td>CSS3</td>
+                    <td>Tailwind</td>
+                    <td>Sass</td>
+                    <td>Postman</td>
+                </tr>
+            </table>
+            <br>
+            <!--Tabelas completa-->
+            <table border="1" style="text-align: center; width: 50%;">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                    </tr>
+                    <tr>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                    </tr>
+                    <tr>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                    </tr>
+                    <tr>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                    </tr>
+                    <tr>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                        <td>Brenno</td>
+                    </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Nota de rodapé, Criado por Brenno</td>
+                    </tr>
+                </tfoot>
+                </tbody>
+            </table>
+            <br>
+            <!--Tabela lógica-->
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Titulo</th>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                    <td>teste</td>
+                </tr>
+            </table>
+            <br>
+        </section>
+
+        <!--Section 12 Listas Ordenadas e desordenadas-->
+        <section>
+            <h2>Section 12: Listas</h2>
+            <p>Linguagens que eu fui aprendendo em ordem</p>
+            <details>
+                <summary>Clique aqui para abrir</summary>
+                <ol type="I">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Node.js</li>
+                    <li>Php
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>JavaScript</li>
+                            <li>JavaScript</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </li>
+                </ol>
+            </details>
+            <br>
+            <details>
+                <summary>Clique aqui</summary>
+                <ul>
+                    <li>Madara</li>
+                    <li>Itachi</li>
+                    <li>Sasuke</li>
+                    <li>Obito</li>
+                    <li>Naruto</li>
+                    <li>Kaguya</li>
+                    </li>
+                </ul>
+            </details>
+            <br>
+            <ul>
+                <li><a href="#">LInk1</a></li>
+                <li><a href="#">LInk1</a></li>
+                <li><a href="#">LInk1</a></li>
+                <li><a href="#">LInk1</a></li>
+                <li><a href="#">LInk1</a></li>
+                <li><a href="#">LInk1</a></li>
+            </ul>
+        </section>
+
+        <!--Section 13: Iframes-->
+        <section>
+            <h2>Iframes, uma página dentro da outra página</h2>
+            <iframe src="login.html" title="Meu Iframe" height="500px" width="500px" frameborder="0"></iframe>
+            <br>
+            <iframe name="meu-iframe" src="https://programacaoweb.com.br" height="300px" width="50%"
+                frameborder="0"></iframe>
+            <br>
+        </section>
+
+        <!--Section 14: Videos-->
+        <section>
+            <h2>Seciton 14: Videos</h2>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fhy-5CtVkiM?si=_Bko9ZjwEzOvHmcT"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1-w1RfGIov4?si=S2eyXtmsEjhDDW9k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!--Section 15: Fomulario Completo-->
+        <section>
+            <h2>Formulário completo</h2>
+            <form action="">
+                <fieldset style="width:400px; border-radius: 5px;">
+                    <legend>Login</legend>
+                    <input type="text" placeholder="Digite seu nome" id="s15nome" required autofocus>
+                    <input type="email" placeholder="Digite seu e-mail" name="section15" id="s15email"
+                        autocapitalize="">
+                    <br>
+                    <br>
+                    <input type="number" placeholder="Digite seu telefone" name="Section15" id="s15telefone" required>
+                    <input type="number" name="Section15" placeholder="Digite seu CF" id="s15CPF" required>
+                    <br>
+                    <hr>
+                    <br>
+                    <input type="radio" name="section15" id="s15a">
+                    <label for="s15a">HTML5</label>
+
+                    <input type="radio" name="section15" id="s15b">
+                    <label for="s15b">CSS3</label>
+
+                    <input type="radio" name="section15" id="s15c">
+                    <label for="s15c">JavaScript</label>
+
+                    <input type="radio" name="section15" id="s15d">
+                    <label for="s15d">Php</label>
+                    <hr>
+                    <input type="checkbox" name="section" id="s15ca">
+                    <label for="s15ca">Madara</label>
+                    <br>
+                    <input type="checkbox" name="section" id="s15cb">
+                    <label for="s15cb">Itachi</label>
+                    <br>
+                    <input type="checkbox" name="section" id="s15cc">
+                    <label for="s15cc">Sasuke</label>
+                    <br>
+                    <input type="checkbox" name="section" id="s15cd">
+                    <label for="s15cd">Sarada</label>
+                    <br>
+                    <hr>
+                    <input type="checkbox" name="section15" id="s15confirmacao">
+                    <label for="s15confirmacao">Aceita os termos de contratação?</label>
+                    <hr>
+                    <label for="s15data">Data:</label>
+                    <input type="date" name="section" id="s15data">
+                    <label for="s15dataCpf">CPF:</label>
+                    <input type="number" placeholder="Digite seu CPF" name="section" id="s15dataCpf">
+                    <br> <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset">
+                    <hr>
+                    <label for="s15select">Selecione a linguagem:</label>
+                    <select name="section15" id="s15select">
+                        <option selected disabled value="">Selecionar</option>
+                        <option value="HTML5">HTML5</option>
+                        <option value="CSS3">CSS3</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Java">Java</option>
+                        <option value="Php">Php</option>
+                    </select>
+                    <br>
+                    <br>
+                    <textarea style="width: 100%;" placeholder="Deixe um comentario" name="section" rows="8"
+                        id="s15text"></textarea>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Seciton 16: Audio-->
+        <section>
+            <h2>Section 16: Audio e videos</h2>
+            <audio controls controlsList="nodownload">
+                <source src="audio/audio-02.opus" type="audio/mpeg">
+            </audio>
+            <p>Esse é um audio meu, falando sobre HTML5</p>
+            <br>
+
+            <video controls controlsList="nodownload">
+                <source src="video/video-teste.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <!--Datalist-->
+        <section>
+            <label for="navegador">Escolha um navegador:</label>
+            <input list="navegadores" id="navegador" name="navegador">
+            <datalist id="navegadores">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Edge">
+                <option value="Safari">
+                <option value="Opera">
+            </datalist>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site criato por Brenno Alencar</p>
+    </footer>
+
+</body>
+
+</html>

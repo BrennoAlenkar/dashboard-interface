@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HTML5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('img/img-fundo-teste.png');
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .principal {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .formulario {
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .formulario h1 {
+            color: #31517E;
+            text-align: center;
+        }
+
+        .formulario input {
+            height: 35px;
+            border: none;
+            background-color: rgb(244, 244, 244);
+            border-radius: 1px;
+            text-indent: 6px;
+            font-size: 17px;
+        }
+        
+        .input {
+            width: 350px;
+        }
+
+        p {
+            color: #375980;
+        }
+
+        .input_check {
+            display: flex;
+            align-items: center;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contatos</a>
+            <a href="#">Configuraçoes</a>
+            <a href="#">Entrar</a>
+        </nav>
+    </header>
+    <main class="principal">
+        <div class="login">
+            <form class="formulario" action="#">
+                <h1>Login</h1>
+                <input class="input" type="email" placeholder="Digite seu e-mail" id="email">
+                <input class="input" type="password" placeholder="Digite sua senha" id="email">
+                <p>Esqueceu a senha?</p>
+                <dev class="input_check">
+                    <input type="checkbox" name="checkbox" id="check">
+                    <label for="check">Aceita os termos de contratação?</label>
+                </dev>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

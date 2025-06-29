@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="keywords" content="HTML, CSS, JAVASCRIPT">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brenno Alencar">
+    <title>Quiz Linguagens</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body style="background-color: rgb(203, 203, 212);">
+    <!--Cabeçalho-->
+    <header>
+        <div style="text-align: center;">
+            <h1 style="margin-bottom: 1px;">Quiz para programadores</h1>
+            <p>Teste seus conhecimentos nas linguagens de programação.</p>
+        </div>
+        <a href="#Textos">Section Textos</a>
+        <a href="#Radio">Section tipo radio</a>
+        <a href="#CheckBox">Section CheckBox</a>
+        <a href="#Data">Section data</a>
+        <hr>
+    </header>
+    <!--Fim Cabeçalho-->
+
+    <!--Principal Corpo-->
+    <main>
+
+        <!--Section 0: Textos e formatações-->
+        <section id="Textos">
+            <h2>Sobre esse quiz</h2>
+            <p><q>Esse</q> quiz fala sobre <strong>programação</strong>, linguagens e tecnologias, <mark>vem aprender
+                    mais</mark> do <em>mundo tech</em></p>
+            <p>Aqui vc vai elevar seus conhecimentos a niveis ainda mais profundos em <strong>programação</strong>!</p>
+            <p>de <del>$1000</del> por $899</p>
+            <p><abbr title="Linguagem de marcação de hiper texto">HTML</abbr>,<abbr title="Folhas de estilo em cascata">
+                    CSS,</abbr> <abbr title="Linguiagem de programação de scripts">JavaScript</abbr></p>
+        </section>
+
+        <!--Section 1: input tipo radio-->
+        <section id="Radio">
+            <h2>Qual dessas linguagens é consideradas linguagens de programação?</h2>
+            <form action="">
+                <input type="radio" name="p1" id="p1a">
+                <label for="p1a">JavaScript</label>
+                <br>
+                <input type="radio" name="p1" id="p1b">
+                <label for="p1b">HTML5</label>
+                <br>
+                <input type="radio" name="p1" id="p1c">
+                <label for="p1c">CSS3</label>
+                <br>
+                <input type="radio" name="p1" id="p1d">
+                <label for="p1d">Java</label>
+            </form>
+        </section>
+
+        <!--Section 2: input tipo checkbox-->
+        <section id="CheckBox">
+            <h2>Qual destas linguagens você já domina?</h2>
+            <form action="">
+                <label for="p2a">HTML5</label>
+                <input type="checkbox" name="HTML5" id="p2a"> <br>
+                <label for="p2b">JavaScript</label>
+                <input type="checkbox" name="HTML5" id="p2b"> <br>
+                <label for="p2c">Node.js</label>
+                <input type="checkbox" name="HTML5" id="p2c"> <br>
+                <label for="p2d">TyperScript</label>
+                <input type="checkbox" name="HTML5" id="p2d"> <br>
+                <label for="p2e">PHP</label>
+                <input type="checkbox" name="HTML5" id="p2e">
+            </form>
+        </section>
+
+        <!--Section 3: input tipo data-->
+        <section id="Data">
+            <h2>Qual é a sua data de nascimento?</h2>
+            <form action="">
+                <label for="p3">Data de nascimento:</label>
+                <input type="date" name="data" id="p3">
+            </form>
+        </section>
+
+        <!--section 4: input range-->
+        <section>
+            <form action="">
+                <h2>Qual seu nivel de conhecimento em linguagens de programação</h2>
+                <input type="range" id="p4a">
+                <label for="p4a">HTML5</label>
+                <br>
+
+                <input type="range" id="p4b">
+                <label for="p4b">CSS3</label>
+                <br>
+
+                <input type="range" id="p4c">
+                <label for="p4c">JavaScript</label>
+                <br>
+
+                <input type="range" id="p4d">
+                <label for="p4d">Node.js</label>
+                <br>
+
+                <input type="range" id="p4e">
+                <label for="p4e">PHP</label>
+                <br>
+                <input type="range" id="p4f">
+                <label for="p4f">Java</label>
+                <br> <br>
+            </form>
+        </section>
+        <!--seciton 5: Formulários-->
+        <section>
+            <form action="">
+
+                <fieldset style="width: 300px; border-radius: 7px;">
+                    <legend>Login</legend>
+                    <label for="">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" name="" id="" required
+                        autocomplete="additional-name">
+                    <br> <br>
+                    <label for="">E-mail:</label>
+                    <input type="email" placeholder="Digite seu e-mail" name="" id=""> <br> <br>
+
+                    <label for="">Telefone:</label>
+                    <input type="number" placeholder="Digite seu telefone" name="" id="" required autocomplete=""> <br>
+                    <br>
+
+                    <label for="">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" name="" id="" required> <br> <br>
+
+                    <input type="checkbox" required>
+                    <label for="">Aceita os termos de contratação?</label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Section 6: input colors-->
+        <section>
+            <h2>Selecione as cores segundo a linguagens</h2>
+            <form action="">
+                <input type="color" id="p6a">
+                <label for="p6a">HTML</label>
+                <br><br>
+                <input type="color" id="p6b">
+                <label for="p6b">CSS</label>
+                <br><br>
+                <input type="color" id="p6c">
+                <label for="p6c">JavaScript</label>
+                <br><br>
+                <input type="color" id="p6d">
+                <label for="p6d">PHP</label>
+                <br> <br>
+                <input type="color" id="p6e">
+                <label for="p6e">Node.js</label>
+            </form>
+        </section>
+
+        <!--section 7: input text-->
+        <section>
+            <h2>Digite sua linguagem favorita:</h2>
+            <input placeholder="Digite sua linguagem" type="text" id="p7">
+        </section>
+
+        <!--section 8: Imagens e videos-->
+        <section>
+            <h2>Abaixo estão Algunas imagens de linguagens e um video de programação em JavaScript:</h2>
+            <div style="display: flex;">
+                <figure>
+                    <img src="img/logo-html.png" alt="Imagem da Linguagem HTML5" style="width: 100px;">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-css.png" alt="Imagem da Linguagem CSS3" style="width: 70px;">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-js.webp" style="width: 100px; " alt="Imagem da Linguagem JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-java.png" alt="Imagem da Linguagem Java" style="width: 100px;"
+                        style="width: 100px;">
+                    <figcaption>Java</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-php.png" alt="Imagem da Linguagem PHP" style="width: 100px;">
+                    <figcaption>PHP</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo_node.png" alt="Imagem da Linguagem Node.js" style="width: 100px;">
+                    <figcaption>Node.js</figcaption>
+                </figure>
+                <br>
+            </div>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Fhy-5CtVkiM?si=Jap8YuUnRdfcMqON"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!--Section 9: input file-->
+        <section>
+            <h2>Faça o uploud de um arquivo de programação:</h2>
+            <form action="">
+                <label for="p9">Baixar PDF</label>
+                <input type="file" id="p9">
+            </form>
+        </section>
+
+        <!--section 10: dropdown-->
+        <section>
+            <h2>Selecione a Linguiagem que de acordo com você é a mais dificil</h2>
+            <form action="">
+                <label for="p10">Selecione uma tecnologia:</label>
+                <select name="tecnologia" id="p10">
+                    <option selected disabled value="">Selecionar</option>
+                    <option value="html5">HTML5</option>
+                    <option value="css3">CSS3</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="react">React</option>
+                    <option value="nodejs">Node.js</option>
+                    <option value="java">Java</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="php">PHP</option>
+                    <option value="go">Go</option>
+                </select>
+            </form>
+        </section>
+
+        <!--section 11: select-->
+        <section>
+            <h2>Seção coringa</h2>
+            <form action="">
+                <label for="p10">Selecione um campo:</label>
+                <select name="tecnologia" id="p10">
+                    <option selected disabled value="">Selecionar</option>
+                    <option value="p11a">Naruto</option>
+                    <option value="p11b">Sasuke</option>
+                    <option value="p11c">Kakashi</option>
+                    <option value="p11d">Itachi</option>
+                    <option value="p11e">Madara</option>
+                    <option value="p11f">Obito</option>
+                    <option value="p11">Minato</option>
+                </select>
+            </form>
+        </section>
+
+        <!--section 12: select dropdown-->
+        <section>
+            <h2>Escolha os valores que você um dia quer ganhar:</h2>
+            <form action="">
+                <label for="p12">Selecione um valor:</label>
+                <select name="valores" id="p12">
+                    <option selected disabled value="p12">Valores</option>
+                    <option value="p12a">$4000</option>
+                    <option value="p12b">$9000</option>
+                    <option value="p12c">$13000</option>
+                    <option value="p12d">$20000</option>
+                    <option value="p12e">$1000000</option>
+                </select>
+            </form>
+        </section>
+
+        <!--section 13: Button icon-->
+        <section>
+            <h2>Colocando icons nos button</h2>
+            <button style="padding: 6px;  border:none; cursor: pointer;">Pesquisar<i
+                    class="fa-solid fa-magnifying-glass" style="margin-left: 5px;"></i></button>
+            <br><br>
+        </section>
+
+        <!--section 14: img github-->
+        <section>
+            <h2>Uma imagem aleatoria do meu github</h2>
+            <figure>
+                <img style="border-radius: 50%;" src="https://github.com/BrennoAlenkar.png" alt="">
+                <figcaption>Imagem GitHub</figcaption>
+            </figure>
+        </section>
+
+        <!--section 15: inout url-->
+        <section>
+            <h2>Digite a URL do seu github:</h2>
+            <form action="">
+                <input placeholder="Digite sua url" type="url" id="p15">
+            </form>
+        </section>
+
+        <!--section 16 img input:-->
+        <section>
+            <h2>input para imagens:</h2>
+            <form action="">
+                <input type="image" id="p16">
+            </form>
+        </section>
+
+        <!--Section 17: tabela-->
+        <section>
+            <h2>Tabela de linguagens de programaçao</h2>
+            <table style="width: 70%; border: 1px solid black; text-align: center; border-collapse: collapse;">
+                <tr>
+                    <th style="border: 1px solid black;">Front end</th>
+                    <th style="border: 1px solid black;">Back end</th>
+                    <th style="border: 1px solid black;">FullStack</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">JavaScript</td>
+                    <td style="border: 1px solid black;">PHP</td>
+                    <td style="border: 1px solid black;">Python</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">HTML</td>
+                    <td style="border: 1px solid black;">Node.js</td>
+                    <td style="border: 1px solid black;">JavaScript (Node + React)</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">CSS</td>
+                    <td style="border: 1px solid black;">Java</td>
+                    <td style="border: 1px solid black;">Ruby on Rails</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">React</td>
+                    <td style="border: 1px solid black;">C# (.NET)</td>
+                    <td style="border: 1px solid black;">Django</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Vue.js</td>
+                    <td style="border: 1px solid black;">Python</td>
+                    <td style="border: 1px solid black;">Laravel + Vue</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Angular</td>
+                    <td style="border: 1px solid black;">Ruby</td>
+                    <td style="border: 1px solid black;">MERN Stack</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--section 18 tabela de animes-->
+        <section>
+            <h2>Tabela de animes populares</h2>
+            <table border="1" style="width: 70%; text-align: center; border-collapse: collapse;">
+                <tr>
+                    <th>Título</th>
+                    <th>Gênero</th>
+                    <th>Ano</th>
+                    <th>Nota IMDb</th>
+                </tr>
+                <tr>
+                    <td>Attack on Titan</td>
+                    <td>Ação / Drama</td>
+                    <td>2013</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>One Piece</td>
+                    <td>Aventura / Fantasia</td>
+                    <td>1999</td>
+                    <td>8.9</td>
+                </tr>
+                <tr>
+                    <td>Death Note</td>
+                    <td>Suspense / Sobrenatural</td>
+                    <td>2006</td>
+                    <td>9.0</td>
+                </tr>
+                <tr>
+                    <td>Demon Slayer</td>
+                    <td>Ação / Fantasia</td>
+                    <td>2019</td>
+                    <td>8.6</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--section 19: Tabela com titulos-->
+        <section>
+            <h2>Tabela com títulos:</h2>
+            <table border="1" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Nota</th>
+                        <th>Mensagem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1-2</td>
+                        <td>Sua nota foi muito baixa. É importante se dedicar mais aos estudos!</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Nota abaixo da média. Reforce o conteúdo e estude um pouco mais!</td>
+                    </tr>
+                    <tr>
+                        <td>5-6</td>
+                        <td>Você atingiu a média, mas ainda há espaço para melhorar. Continue estudando!</td>
+                    </tr>
+                    <tr>
+                        <td>7-8</td>
+                        <td>Parabéns! Sua nota foi boa. Você está no caminho certo, continue assim!</td>
+                    </tr>
+                    <tr>
+                        <td>9-10</td>
+                        <td>Excelente! Sua nota foi ótima. Mantenha o bom trabalho!</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Boa sorte na próxima!</td>
+                        <td>Continue se dedicando aos estudos!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--section 20 teste tabelas-->
+        <section>
+            <h2>Tabela teste</h2>
+            <table border="1" style="text-align: center;">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>País</th>
+                        <th>Fundação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Flamengo</td>
+                        <td>Brasil</td>
+                        <td>1895</td>
+                    </tr>
+                    <tr>
+                        <td>Real Madrid</td>
+                        <td>Espanha</td>
+                        <td>1902</td>
+                    </tr>
+                    <tr>
+                        <td>Manchester United</td>
+                        <td>Inglaterra</td>
+                        <td>1878</td>
+                    </tr>
+                    <tr>
+                        <td>Bayern de Munique</td>
+                        <td>Alemanha</td>
+                        <td>1900</td>
+                    </tr>
+                    <tr>
+                        <td>Boca Juniors</td>
+                        <td>Argentina</td>
+                        <td>1905</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Esses são alguns dos clubes mais famosos do mundo.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Fonte: dados históricos de fundação.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--section 21: listas-->
+        <section>
+            <h2>Listas das linguagens mais usadas no mundo</h2>
+            <ol type="I">
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>C/C++</li>
+                <li>SQL</li>
+                <li>TypeScript</li>
+                <li>PHP</li>
+            </ol>
+        </section>
+
+        <!--section 22: listas desordenadas-->
+        <section>
+            <h2>Listas de compras</h2>
+            <details>
+                <summary>Lista de compras</summary>
+                <ul>
+                    <li>Arroz</li>
+                    <li>Feijão</li>
+                    <li>Carne</li>
+                    <li>Tomate</li>
+                    <li>Pepino</li>
+                    <li>Abacaxi</li>
+                    <li>Sal
+                        <ul>
+                            <li>Teste</li>
+                            <li>Teste</li>
+                            <li>Teste</li>
+                            <li>Teste</li>
+                            <li>Teste</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <!--section 23: formulários completo-->
+        <section>
+            <h2>Formulário completo</h2>
+            <form action="">
+                <fieldset style="width: 500px;">
+                    <legend>Login Justiça eleitoral</legend>
+                    <label for="p23Nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" id="p23Nome" required>
+                    
+                    <label for="p23Email">E-mail:</label>
+                    <input type="email" placeholder="Digite E-mail" id="p23Email" required>
+                    <br> <br>
+                    <label for="p23Senha">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" id="p23Senha" required>
+
+                    <br>
+                    <br>
+
+                    <input type="month">
+
+                    <hr style="width: 100%;">
+                    <input type="radio" name="pergunta23" id="p23a">
+                    <label for="p23a">Pessoa juridica</label>
+                    <input type="radio" name="pergunta23" id="p23a">
+                    <label for="p23a">Pessoa juridica</label>
+                    <input type="radio" name="pergunta23" id="p23a">
+                    <label for="p23a">Pessoa juridica</label>
+                    <input type="radio" name="pergunta23" id="p23a">
+                    <label for="p23a">Pessoa juridica</label>
+                    <br>
+                    <input type="checkbox" name="pergunta23" id="p23Check">
+                    <label for="p23Check">Aceita os termoas de contratação?</label>
+                    <br> <br>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <!--Fim main-->
+
+    <!--Rodapé-->
+    <footer>
+        <p>Site criado por Brenno Alencar para seu <a href="https://github.com/BrennoAlenkar">github</a></p>
+    </footer>
+    <!--Fim rodapé-->
+</body>
+
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html> <!--Declaração DOCTYPE-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Site criado para praticar HTML5">
+    <meta name="author" content="Brenno Alencar">
+    <title>Pratica | HTML5</title>
+    <style>
+        .div-pai {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .div-cart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            height: 300px;
+            width: 260px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #eeeeee;">
+    <!--Cabeçalho-->
+    <header>
+        <h1>HyperText Markup Lang<span style="color: orangered;">uage</span></h1>
+        <p>Venha aprender tudo sobre HTML5 e suas Tags de forma completa uma vez por todas</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Contatos</a>
+            <a href="#">Compras</a>
+            <a href="#">Estudos</a>
+            <a href="#">Acessar</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!--Conteúdo principal-->
+    <main>
+
+        <!--Section 1: Formatação de textos e citações-->
+        <section>
+            <h2>Section 1: Formatação de textos e citações</h2>
+
+            <p>
+                <abbr title="HyperText Markup Language">HTML</abbr> <strong>Linguagem de Marcação de <span style="background-color: rgb(232, 103, 56);"> HiperTexto</span></strong>
+                é o bloco de construção mais básico da web. Define o <em> significado e a estrutura </em> do conteúdo da
+                web. Outras tecnologias além do<strong> HTML</strong> geralmente são usadas para descrever a
+                aparência/apresentação <abbr title="Folhas de estilo em cascata">CSS</abbr> ou a
+                funcionalidade/comportamento <abbr title="Linguagem de programação">JavaScript</abbr> de uma página da
+                web.
+            </p>
+
+            <p>
+                <q>Hipertexto</q> refere-se aos <strong>links</strong> que conectam páginas da Web entre si, seja dentro
+                de um único site ou entre
+                sites. <a href="#">Links</a> <mark>são um aspecto fundamental da web.</mark> Ao carregar conteúdo na
+                Internet e vinculá-lo a páginas
+                criadas por outras pessoas, você se torna um participante ativo na <abbr title="WWW">world wide
+                    web.</abbr>
+            </p>
+
+            <p>
+                O <strong>HTML</strong> usa <q>Marcação </q> para anotar <u> texto, imagem e outros conteúdos para
+                    exibição em um navegador da Web.</u>
+                A
+                marcação <strong>HTML </strong> inclui <q>elementos</q> especiais,
+            </p>
+
+            <p>Este módulo fornece uma base de conhecimento,
+            <blockquote>permitindo que você acostume-se com os conceitos e sintaxes importantes,</blockquote> tais como
+            aplicar HTML para texto, como criar hyperlinks e como usar HTML para estruturar uma página web.</p>
+
+            <p>Curso de programação web de <del><strong>R$400</strong> </del> por <strong>R$299</strong></p>
+
+            <p>O <sub>HTML</sub> e o <sup>JavaScript</sup></p>
+
+            <p>O HTML foi criado pelo <cite>fisico tee benners lee</cite></p>
+
+            <p>Eu moro na rua
+            <address>Helio franca, quadra 88 lote 23 casa 1</address>
+            </p>
+
+        </section>
+
+        <!--Section 2: Links ancoras-->
+        <section>
+            <h2>Section 2: Links</h2>
+            <a href="pratica.html" target="_blank">Link1</a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML5</a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS3</a>
+            <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a>
+            <a href="https://www.java.com/pt-BR/" target="_blank">Java</a>
+            <br>
+            <ul>
+                <li><a href="https://github.com/BrennoAlenkar" target="_blank">GitHub</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+            <br>
+            <a href="https://google.com" target="_parent"><img width="100px" src="img/logo-css.png"
+                    alt="Imagem css"></a>
+        </section>
+
+        <!--Section 3: Formulario completo-->
+        <section>
+            <h2>Section 3: Formulario completo</h2>
+            <form>
+                <fieldset style="width: 500px;">
+                    <legend>Login</legend>
+                    <label for="s3Nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" name="section3" id="s3Nome" required>
+                    <label for="s3Email">E-mail:</label>
+                    <input type="text" placeholder="Digite seu e-mail" name="section3" id="s3Email" required>
+                    <br>
+                    <br>
+                    <label for="s3Senha">Senha:</label>
+                    <input type="password" placeholder="Digite sua senha" id="s3Senha" required>
+                    <label for="s3Telefone">CPF:</label>
+                    <input type="number" placeholder="Digite sua senha" id="s3Telefone" required>
+
+                    <hr>
+                    <!--Input radio-->
+                    <input type="radio" name="section3" value="HTML5" id="s3radioa" required>
+                    <label for="s3radioa">HTML5</label>
+                    <input type="radio" name="section3" value="CSS3" id="s3radiob" required>
+                    <label for="s3radiob">CSS3</label>
+                    <input type="radio" name="section3" value="JavaScript" id="s3radioc" required>
+                    <label for="s3radioc">JavaScript</label>
+                    <input type="radio" name="section3" value="Java" id="s3radiod" required>
+                    <label for="s3radiod">Java</label>
+                    <input type="radio" name="section3" value="Php" id="s3radioe" required>
+                    <label for="s3radioe">Php</label>
+                    <input type="radio" name="section3" value="Node.js" id="s3radiof" required>
+                    <label for="s3radiof">Node.js</label>
+                    <hr>
+                    <!--Input range-->
+                    <h3>Nivel de habilidade</h3>
+                    <input type="range" id="s3rangea">
+                    <label for="s3rangea">HTML5</label>
+                    <br>
+                    <input type="range" id="s3rangeb">
+                    <label for="s3rangeb">CSS3</label>
+                    <br>
+                    <input type="range" id="s3rangec">
+                    <label for="s3rangec">JavaScript</label>
+                    <input type="range" id="s3rangec">
+                    <hr>
+                    <input type="checkbox" id="s4check" required>
+                    <label for="s4check">Aceita os termos de contratação?</label>
+                    <br>
+                    <br>
+
+                    <input type="submit" value="Enviar formulario">
+                    <input type="reset" value="Limpar campos">
+
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Section 4: Datalist-->
+        <section>
+            <h2>Section 4: Datalist</h2>
+            <label for="s4input">Escolha uma linguagem:</label>
+            <input list="s4a" id="s4input" placeholder="Digite uma linguagem" name="linguagem">
+            <datalist id="s4a">
+                <option value="HTML5">
+                <option value="CSS3">
+                <option value="JavaScript">
+                <option value="Java">
+                <option value="PHP">
+            </datalist>
+        </section>
+
+        <!--Section 5: Select-->
+        <section>
+            <h2>Section 5: Select</h2>
+            <form>
+                <label for="s5">Selecione um campo:</label>
+                <select name="Section5" id="s5">
+                    <option selected disabled value="">Selecionar</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Php">Php</option>
+                </select>
+            </form>
+        </section>
+
+        <!--Section 6: Imagens e videos-->
+        <section>
+            <h2>Section 6: Imagens e videos</h2>
+            <div style="display: flex; text-align: center;">
+                <figure>
+                    <img src="img/logo-html.png" width="100px" alt="Imagem HTML5">
+                    <figcaption>HTML5</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-css.png" width="80px" alt="Imagem CSS3">
+                    <figcaption>CSS3</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-js.webp" width="100px" alt="Imagem JavaScript">
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo-php.png" width="100px" alt="Imagem Php">
+                    <figcaption>Php</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/logo_node.png" width="100px" alt="Imagem Node.js">
+                    <figcaption>Node.js</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!--Section 7: Divs-->
+        <section>
+            <h2>Section 7: Divs, Blocos de construção</h2>
+            <div class="div-pai">
+                <div class="div-cart">
+                    <p>Div 01</p>
+                </div>
+                <div class="div-cart">
+                    <p>Div 02</p>
+                </div>
+                <div class="div-cart">
+                    <p>Div 03</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Section 8: Tabelas-->
+        <section>
+            <h2>Section 8: Tabelas</h2>
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Titulo</th>
+                    <th>Titulo</th>
+                    <th>Titulo</th>
+                    <th>Titulo</th>
+                </tr>
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+
+                <tr>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                    <td>item</td>
+                </tr>
+            </table>
+            <br>
+            <!--Tabela diferentes-->
+            <h2>Tabela de compras</h2>
+            <table border="1" style="text-align: center; width: 50%;">
+                <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                        <th>Titulo</th>
+                    </tr>
+                <tbody>
+                    </thead>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                        <td>item</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Tabela completa e semantica criada por Brenno</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+
+            <!--Tabela diferente-->
+            <h2>Tabela diferente</h2>
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Titulo</th>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <th>Titulo</th>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+            </table>
+        </section>
+
+        <!--Section 9: Iframes-->
+        <section>
+            <h2>Iframes</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/caPcciQYhZA?si=-OSrU10FmK-0pcsf"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <iframe src="semantico.html" width="560" height="315" frameborder="0"></iframe>
+
+            <iframe src="login.html" width="300" height="315" frameborder="0"></iframe>
+        </section>
+
+        <!--Section 10: Videos-->
+        <section>
+            <h2>Section 10: Videos</h2>
+            <video controls controlsList="nodownload" poster="img/images.jpeg" height="500px">
+                <source src="video/video-teste.mp4">
+            </video>
+        </section>
+
+        <!--Section 11: Listas-->
+        <section>
+            <h2>Section 11: Listas</h2>
+            <details>
+                <summary>Clique em mim:</summary>
+                <ol>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Php</li>
+                    <li>Java</li>
+                    <li>Git</li>
+                </ol>
+            </details>
+            <br>
+            <details>
+                <summary>Clique em mim:</summary>
+                <ul>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item</li>
+                    <li>item
+                        <ul>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                            <li>item</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <!--Section 12: Audio-->
+        <section>
+            <h2>Section 12: Audio</h2>
+            <audio controls controlsList="nodownload">
+                <source src="audio/audio-02.opus" type="audio/ogg">
+                Seu navegador não suporta o elemento <code>audio</code>.
+            </audio>
+        </section>
+
+        <!--Section 13: datalist-->
+        <section>
+            <h2>Datalist 13: Parecido com select</h2>
+
+            <label for="s13Datlist">Sekecione a opção:</label>
+            <input list="s13" placeholder="Digite seu nome" type="text" id="s13Datlist">
+            <datalist id="s13">
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="React">React</option>
+                <option value="Php">Php</option>
+            </datalist>
+        </section>
+
+        <!--Section 14: input uploud-->
+        <section>
+            <h2>Section 14: uploud</h2>
+            <form action="">
+                <label for="s14Uploud">Faça uploud:</label>
+                <input type="file" name="section14" id="s14Uploud">
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
