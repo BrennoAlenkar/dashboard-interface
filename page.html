@@ -1,15 +1,474 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Brenno Alencar">
-        <title>Curso | HTML 5</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HTMl">
+    <meta name="description" content="Pratica HTML, nivel pleno">
+    <meta name="author" content="Brenno Alencar">
+    <title>HTML 5 | nível pleno</title>
+    <style>
+        .div_pai {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+        }
 
-    <body>
-        <h1>Hello Word!</h1>
-    </body>
+        div {
+            width: 260px;
+            height: 400px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Cabeçalho-->
+    <header>
+        <h1>HyperText Markup Lan<span style="color: orangered;">guage</span></h1>
+        <p>Tudo sobre o HTML 5 semântico, as principais tags, de forma profissional</p>
+
+        <!--Navegação-->
+        <nav>
+            <ul>
+                <li><a href="#" target="_blank">Home</a></li>
+                <li><a href="#" target="_blank">Contatos</a></li>
+                <li><a href="#" target="_blank">Curiosidades</a></li>
+                <li><a href="#" target="_blank">Fatos</a></li>
+                <li><a href="#" target="_blank">Acessar</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <!--Conteúdo principal-->
+    <main>
+        <!--Section 1: Textos e formatações e citações-->
+        <section>
+            <h2>Section 1: Textos e formatações e citações</h2>
+
+            <p><strong>Texto forte, e muito importante, semântico</strong> consectetur adipisicing elit. <em>Texto em
+                    enfase importante</em>Texto sublinhado<u>necessitatibus</u> facere<mark> Texto marcado,
+                    marcatexto</mark> quod quo modi odio <cite>Citação</cite>s facilis, sequi assumenda voluptate
+                voluptas?</p>
+
+            <p>Lorem<strong> ipsum dolor sit</strong> amet consectetur adipisicing elit. <q>Brenno Alencar</q> dolorem
+                repellendus fugiat numquam perspiciatis tempore animi,<small>Texto pequeno</small> <br>
+                ea quidem pariatur similique? Repellat distinctio commodi eaque possimus! Et, veritatis? Lorem ipsum
+                dolor sit,
+            <blockquote>amet consectetur <del>Testo deletado</del> elit. Quam ullam est beatae totam, dicta tenetur
+                deserunt consequatur odio voluptates sapiente possimus vero quae</blockquote> quaerat harum nihil optio
+            praesentium placeat rem.</p>
+
+            <p>Lorem <b>ipsum dolor</b> sit amet <i>consectetur</i> adipisicing elit. <abbr
+                    title="HyperText Markup Language">HTML5</abbr> exercitationem laboriosam beatae ea voluptatibus
+                porro obcaecati <abbr title="Cascading Style Sheets">CSS3</abbr> recusandae? Autem, qui eum vel dolorem
+                neque repellat ab fuga asperiores dicta odit similique.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores magni ea quae <abbr
+                    title="Linguagem de programação de script">JavaScript</abbr> laborum et neque ipsum corporis
+                repellat fuga aperiam, cumque amet quam, enim iure quaerat! A, quas?</p>
+
+            <p>Curso de HTML5 de <del>R$600</del> por <strong>R$299</strong></p>
+
+            <!--Tag de Superior, e inferior-->
+            <p><sup>Lorem </sup>ipsum <sub>dolor</sub> sit </p>
+
+            <br>
+
+            <article>
+                <h3>Artigo importante sobre a evolução da IA</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id alias commodi repellendus inventore
+                    consectetur facere atque corrupti cupiditate nihil provident harum, at exercitationem, tempore
+                    quidem? Rem voluptas repellat nihil minus?</p>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab doloribus aliquid qui at, tempora
+                    suscipit dolor voluptate. Rem quia aperiam placeat praesentium distinctio totam optio? Voluptates
+                    harum eum deleniti.</p>
+
+                <img src="img/img-fundo-teste.png" width="200px" height="700px" alt="">
+            </article>
+        </section>
+
+        <!--Section 2: Formulario completo-->
+        <section>
+            <h2>Section 2: Formulário completo</h2>
+            <form action="arquivo.php.exemplo" method="post">
+
+                <fieldset>
+                    <legend>Login</legend>
+                    <label for="section2Nome">Nome:</label>
+                    <input type="text" placeholder="Digite seu nome" name="section2" id="section2Nome" required>
+
+                    <label for="section2Email">E-mail</label>
+                    <input type="email" placeholder="Digite seu e-mail" name="section2" id="section2Email" required>
+                    <br>
+                    <br>
+
+                    <label for="section2Nome">Telefone:</label>
+                    <input type="number" placeholder="Digite seu telefone" name="section2" id="section2Telefone"
+                        required>
+
+                    <label for="section2Email">Senha:</label>
+                    <input type="password" placeholder="Digite seu senha" name="section2" id="section2Senha" required>
+                    <hr>
+                    <p>Selecione uma das opçoes</p>
+                    <input type="radio" name="section2" value="Front-end" id="section2Radioa" required>
+                    <label for="section2Radioa">Front-end</label>
+
+                    <input type="radio" name="section2" value="Back-end" id="section2Radiob" required>
+                    <label for="section2Radiob">Back-end</label>
+
+                    <input type="radio" name="section2" value="Fullstack" id="section2Radioc" required>
+                    <label for="section2Radioc">Fullstack</label>
+
+                    <input type="radio" name="section2" value="Desenpregado" id="section2Radiod" required>
+                    <label for="section2Radiod">Desenpregado</label>
+                    <hr>
+                    <p>Dados inportantes:</p>
+                    <label for="section2DataNascimento">Digite sua data nascimento:</label>
+                    <input type="date" name="section2" id="section2DataNascimento" required>
+
+                    <label for="section2CPF">Digite seu CPF</label>
+                    <input type="number" name="section2" placeholder="Digite seu CPF" id="section2CPF" required>
+
+                    <hr>
+
+                    <textarea name="" placeholder="Deixe um comentario" rows="6" id="section2TextArea"></textarea>
+
+                    <br>
+                    <br>
+                    <input type="checkbox" name="section2" id="section2Termo">
+                    <label for="section2Termo">Aceita os termos de contratação?</label>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar formulário">
+                    <input type="reset" value="Limpar campos">
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Section 3: Select e Datalist-->
+        <section>
+            <h2>Section 3: Select e Datalist</h2>
+            <form action="arquivo.php.exemplo" method="post">
+
+                <label for="section3Select">Selecione o campo</label>
+                <select name="section3" id="section3Select">
+                    <option selected disabled value=""></option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Php">Php</option>
+                </select>
+            </form>
+
+            <form action="arquivo.php.exemplo" method="post">
+
+                <label for="section3Datalist">Digite uma linguagem</label>
+                <input list="s3Datalist" placeholder="Digite uma linguagem" id="section3Datalist">
+                <datalist id="s3Datalist">
+                    <option value="HTML5">HTML5</option>
+                    <option value="CSS3">CSS3</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Php">Php</option>
+                </datalist>
+            </form>
+        </section>
+
+        <!--Section 4: Input range-->
+        <section>
+            <h2>Section 4: Input range, Selecione o seu conhecimento em cada linguegm</h2>
+            <form action="arquivo.php.exemplo" method="post">
+
+                <input type="range" name="section4" value="HTML5" id="section4a">
+                <label for="section4a">HTML5</label>
+                <br>
+                <input type="range" name="section4" value="CSS3" id="section4b">
+                <label for="section4b">CSS3</label>
+                <br>
+                <input type="range" name="section4" value="JavaScript" id="section4c">
+                <label for="section4c">JavaScript</label>
+                <br>
+                <input type="range" name="section4" value="Java" id="section4d">
+                <label for="section4d">Java</label>
+                <br>
+            </form>
+        </section>
+
+        <!--Section 5: listas-->
+        <section>
+            <h2>Section 5: listas das linguagens que eu mais gosto</h2>
+            <ol>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Php</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Node.js</li>
+            </ol>
+            <h3>Lista de liguagens</h3>
+            <ul>Java</ul>
+            <ul>Javascript</ul>
+            <ul>Php</ul>
+            <ul>Go</ul>
+            <ul>Python
+                <ul>
+                    <p>Ferramentas</p>
+                    <li>Git</li>
+                    <li>Ftp</li>
+                    <li>Any</li>
+                </ul>
+            </ul>
+        </section>
+
+        <!--Section 6: Tabelas, 3 tipos de tabelas-->
+        <section>
+            <h2>Section 6: 3 tipos de tabelas</h2>
+
+            <!--Tabela 01-->
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Título</th>
+                    <th>Título</th>
+                    <th>Título</th>
+                    <th>Título</th>
+                </tr>
+                <tr>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+            </table>
+            <br>
+            <!--Tabela 02-->
+            <table border="1" style="text-align: center; width: 50%;">
+                <tr>
+                    <th>Título</th>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                    <td>Item tabela</td>
+                </tr>
+            </table>
+            <br>
+            <!--Tabela 03-->
+            <table border="1" style="text-align: center; width: 50%;">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Título</th>
+                        <th>Título</th>
+                        <th>Título</th>
+                    </tr>
+                <tbody>
+                    </thead>
+                    <tr>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                    </tr>
+                    <tr>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                    </tr>
+                    <tr>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                    </tr>
+                    <tr>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                        <td>Item tabela</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Tabela Criada por Brenno Alencar para seu <a href="#" target="_blank">GitHub</a></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!--Section 7: Imagens jpeg e png-->
+        <section>
+            <h2>Section 7: Imagens jpeg e png</h2>
+
+            <!--Imagens png com fundo trasnparente-->
+            <figure>
+                <img src="img/logo-html.png" width="100px" alt="Imagem HTML5">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            <figure>
+                <img src="img/logo-css.png" width="100px" alt="Imagem CSS3">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure>
+                <img src="img/logo-js.webp" width="100px" alt="Imagem JavaScript">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure>
+                <img src="img/logo-java.png" width="100px" alt="Imagem Java">
+                <figcaption>Java</figcaption>
+            </figure>
+            <figure>
+                <img src="img/logo-php.png" width="100px" alt="Imagem Php">
+                <figcaption>Php</figcaption>
+            </figure>
+            <br>
+
+            <!--Imagem jpeg-->
+            <img src="img/img-fundo-teste.png" width="500px" alt="Foto qualquer de fundo">
+            <img src="img/images-fundo.jpeg" width="500px" alt="Foto qualquer de fundo">
+        </section>
+
+        <!--Section 8: Iframes-->
+        <section>
+            <h2>Section 8: Iframes</h2>
+            <!--Iframe de paginas dentro do meu proprio projetos-->
+            <iframe src="login.html" width="590px" height="600px" frameborder="0"></iframe>
+            <!--Iframe de outra pagina de fora-->
+            <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
+            <br>
+            <!--Iframe de um video do youtube-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MVyl-zmJqig?si=rtCpPiQcbGHfGtb2"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <!--Section 9: Audio e videos-->
+        <section>
+            <h2>Section 9: Audio e videos</h2>
+            <!--Audio, tem outros formatos tbm de type-->
+            <audio controls controlsList="nodownload">
+                <source src="audio/audio-02.opus" type="mpeg">
+            </audio>
+            <br>
+            <br>
+            <video controls controls controlsList="nodownload" autoplay poster="img/logo-js.webp" width="400px">
+                <source src="video/video-teste.mp4" type="mp4">
+            </video>
+        </section>
+
+        <!--Section 10: uploud-->
+        <section>
+            <h2>Section 10: Faça um uploud de arquivo HTML5</h2>
+            <form action="arquivo.php.exemplo" method="post">
+                <label for="section10Uploud">Faça o Uploud do arquivo HTML5:</label>
+                <input type="file" name="section10" id="section10Uploud">
+            </form>
+
+        </section>
+
+        <!--Section 11: Input Mutipla escolha-->
+        <section>
+            <h2>Section 12: Selecione as linguagens que voce já dominou</h2>
+            <form action="arquivo.php.exemplo" method="post">
+
+                <input type="checkbox" name="section11" value="HTML5" id="section11a">
+                <label for="section11a">HTML5</label>
+                <br>
+                <input type="checkbox" name="section11" value="CSS3" id="section11b">
+                <label for="section11b">CSS3</label>
+                <br>
+                <input type="checkbox" name="section11" value="JavaScript" id="section11c">
+                <label for="section11c">JavaScript</label>
+                <br>
+                <input type="checkbox" name="section11" value="Php" id="section11d">
+                <label for="section11d">Php</label>
+                <br>
+            </form>
+        </section>
+
+        <!--Section12: Divs e um pouco de css-->
+        <section>
+            <h2>Section12: Divs e um pouco de css</h2>
+            <div class="div_pai">
+                <div>01</div>
+                <div>02</div>
+                <div>03</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>|&copy; Site criado por Brenno Alencar para seu <a href="#" target="_blank">github</a></p>
+    </footer>
+</body>
 
 </html>
