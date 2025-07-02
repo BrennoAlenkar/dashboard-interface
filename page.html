@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="HTMl">
-    <meta name="description" content="Pratica HTML, nivel pleno">
-    <meta name="author" content="Brenno Alencar">
     <title>HTML 5 | nível pleno</title>
 </head>
 
 <body>
     <!--Cabeçalho-->
     <header>
-        <h1>HyperText Markup Lan<span style="color: orangered;">guage</span></h1>
+        <h1>HyperText Markup Language</span></h1>
         <p>Tudo sobre o HTML 5 semântico, as principais tags, de forma profissional</p>
 
         <!--Navegação-->
@@ -35,19 +32,15 @@
         <!--Section 1: Textos e formatações e citações-->
         <section>
             <h2>Section 1: Textos e formatações e citações</h2>
-
             <p><strong>Texto forte, e muito importante, semântico</strong> consectetur adipisicing elit. <em>Texto em
                     enfase importante</em>Texto sublinhado<u>necessitatibus</u> facere<mark> Texto marcado,
                     marcatexto</mark> quod quo modi odio <cite>Citação</cite>s facilis, sequi assumenda voluptate
                 voluptas?</p>
 
-            <p>Lorem<strong> ipsum dolor sit</strong> amet consectetur adipisicing elit. <q>Brenno Alencar</q> dolorem
-                repellendus fugiat numquam perspiciatis tempore animi,<small>Texto pequeno</small> <br>
-                ea quidem pariatur similique? Repellat distinctio commodi eaque possimus! Et, veritatis? Lorem ipsum
-                dolor sit,
-            <blockquote>amet consectetur <del>Testo deletado</del> elit. Quam ullam est beatae totam, dicta tenetur
-                deserunt consequatur odio voluptates sapiente possimus vero quae</blockquote> quaerat harum nihil optio
-            praesentium placeat rem.</p>
+            <blockquote cite="#">
+                <p>consectetur <del>Testo deletado</del> elit. Quam ullam est beatae totam, dicta tenetur
+                    deserunt consequatur odio voluptates sapiente possimus vero quae</p>
+            </blockquote>
 
             <p>Lorem <b>ipsum dolor</b> sit amet <i>consectetur</i> adipisicing elit. <abbr
                     title="HyperText Markup Language">HTML5</abbr> exercitationem laboriosam beatae ea voluptatibus
@@ -57,16 +50,14 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores magni ea quae <abbr
                     title="Linguagem de programação de script">JavaScript</abbr> laborum et neque ipsum corporis
                 repellat fuga aperiam, cumque amet quam, enim iure quaerat! A, quas?</p>
-
             <p>Curso de HTML5 de <del>R$600</del> por <strong>R$299</strong></p>
-
             <!--Tag de Superior, e inferior-->
             <p><sup>Lorem </sup>ipsum <sub>dolor</sub> sit </p>
-
             <br>
-
             <article>
-                <h3>Artigo importante sobre a evolução da IA</h3>
+                <header>
+                    <h3>Artigo importante sobre a evolução da IA</h3>
+                </header>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id alias commodi repellendus inventore
                     consectetur facere atque corrupti cupiditate nihil provident harum, at exercitationem, tempore
                     quidem? Rem voluptas repellat nihil minus?</p>
@@ -76,6 +67,9 @@
                     harum eum deleniti.</p>
 
                 <img src="img/img-fundo-teste.png" width="200px" height="700px" alt="">
+                <footer>
+                    <p>teste</p>
+                </footer>
             </article>
         </section>
 
@@ -83,7 +77,6 @@
         <section>
             <h2>Section 2: Formulário completo</h2>
             <form action="arquivo.php.exemplo" method="post">
-
                 <fieldset>
                     <legend>Login</legend>
                     <label for="section2Nome">Nome:</label>
@@ -93,15 +86,12 @@
                     <input type="email" placeholder="Digite seu e-mail" name="section2" id="section2Email" required>
                     <br>
                     <br>
+                    <label for="section2Telefone">Telefone:</label>
+                    <input type="number" placeholder="Digite seu telefone" name="section2" id="section2Telefone"required>
 
-                    <label for="section2Nome">Telefone:</label>
-                    <input type="number" placeholder="Digite seu telefone" name="section2" id="section2Telefone"
-                        required>
+                    <label for="section2Senha">Senha:</label>
+                    <input type="password" placeholder="Digite seu senha" name="section2" id="section2Senha" required> 
 
-                    <label for="section2Email">Senha:</label>
-                    <input type="password" placeholder="Digite seu senha" name="section2" id="section2Senha" required>
-                    <hr>
-                    <p>Selecione uma das opçoes</p>
                     <input type="radio" name="section2" value="Front-end" id="section2Radioa" required>
                     <label for="section2Radioa">Front-end</label>
 
@@ -123,7 +113,8 @@
 
                     <hr>
 
-                    <textarea name="" placeholder="Deixe um comentario" rows="6" id="section2TextArea"></textarea>
+                    <label for="section2TextArea">Teste:</label>
+                    <textarea name="section2" placeholder="Deixe um comentario" id="section2TextArea"></textarea>
 
                     <br>
                     <br>
@@ -215,9 +206,8 @@
         <!--Section 6: Tabelas, 3 tipos de tabelas-->
         <section>
             <h2>Section 6: 3 tipos de tabelas</h2>
-
             <!--Tabela 01-->
-            <table border="1" style="text-align: center; width: 50%;">
+            <table>
                 <tr>
                     <th>Título</th>
                     <th>Título</th>
@@ -257,7 +247,7 @@
             </table>
             <br>
             <!--Tabela 02-->
-            <table border="1" style="text-align: center; width: 50%;">
+            <table>
                 <tr>
                     <th>Título</th>
                     <td>Item tabela</td>
@@ -306,7 +296,7 @@
             </table>
             <br>
             <!--Tabela 03-->
-            <table border="1" style="text-align: center; width: 50%;">
+            <table>
                 <thead>
                     <tr>
                         <th>Título</th>
@@ -389,11 +379,6 @@
             <!--Iframe de outra pagina de fora-->
             <iframe src="https://www.cursoemvideo.com/" frameborder="0"></iframe>
             <br>
-            <!--Iframe de um video do youtube-->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/MVyl-zmJqig?si=rtCpPiQcbGHfGtb2"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
 
         <!--Section 9: Audio e videos-->
