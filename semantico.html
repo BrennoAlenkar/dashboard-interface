@@ -34,7 +34,7 @@
 
     <main>
         <!--Section 1: Textos é formatação-->
-        <section id="textos" style="background-color: #829b86;"> 
+        <section id="textos" style="background-color: #829b86;">
             <h2>Textos e formatação</h2>
             <p>O HTML, <strong>sigla para HyperText Markup Language</strong> <em>(Linguagem de Marcação de
                     Hipertexto),</em> é a linguagem <strong>base</strong>
@@ -68,52 +68,9 @@
 
                 Em resumo, o HTML é a espinha dorsal da web. Sem ele, os sites como conhecemos simplesmente não
                 existiriam.</p>
-                <p><del>HTML é uma linguagem de proramção!</del> HTML é uma linguagem de marcação, usada para estruturar páginas web!</p>
+            <p><del>HTML é uma linguagem de proramção!</del> HTML é uma linguagem de marcação, usada para estruturar
+                páginas web!</p>
             <br>
-            <h5>HTML e suas principais Tags</h5>
-            <div style="display: flex; justify-content: space-around;">
-                <p>
-                    <div>
-                        Principais tags do HTML5:
-                        <strong>&lt;!DOCTYPE&gt;</strong> (declara o tipo do documento), <br>
-                        <strong>&lt;html&gt;</strong> (elemento raiz do HTML), <br>
-                        <strong>&lt;head&gt;</strong> (contém metadados), <br>
-                        <strong>&lt;meta&gt;</strong> (define dados como charset e viewport),<br>
-                        <strong>&lt;title&gt;</strong> (define o título da página),<br>
-                        <strong>&lt;body&gt;</strong> (corpo visível da página),<br>
-                        <strong>&lt;header&gt;</strong> (cabeçalho da página ou seção),<br>
-                        <strong>&lt;nav&gt;</strong> (área de navegação),<br>
-                        <strong>&lt;main&gt;</strong> (conteúdo principal),<br>
-                        <strong>&lt;section&gt;</strong> (seção de conteúdo),<br>
-                        <strong>&lt;article&gt;</strong> (conteúdo independente, como posts),<br>
-                        <strong>&lt;aside&gt;</strong> (conteúdo lateral, como barras laterais),<br>
-                        <strong>&lt;footer&gt;</strong> (rodapé da página ou seção),<br>
-                        <strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong> (títulos, do mais importante ao menos),<br>
-                    </div>
-                    <div>
-                        <strong>&lt;p&gt;</strong> (parágrafo),<br>
-                        <strong>&lt;br&gt;</strong> (quebra de linha),<br>
-                        <strong>&lt;hr&gt;</strong> (linha horizontal/divisória),<br>
-                        <strong>&lt;div&gt;</strong> (bloco genérico),
-                        <strong>&lt;span&gt;</strong> (conteúdo em linha genérico),<br>
-                        <strong>&lt;strong&gt;</strong> (texto com ênfase forte),<br>
-                        <strong>&lt;em&gt;</strong> (ênfase leve),<br>
-                        <strong>&lt;a&gt;</strong> (links),<br>
-                        <strong>&lt;img&gt;</strong> (imagens),<br>
-                        <strong>&lt;ul&gt;</strong> (lista não ordenada),<br>
-                        <strong>&lt;ol&gt;</strong> (lista ordenada),<br>
-                        <strong>&lt;li&gt;</strong> (item de lista),<br>
-                        <strong>&lt;table&gt;</strong> (tabelas),<br>
-                        <strong>&lt;tr&gt;</strong> (linha de tabela),<br>
-                        <strong>&lt;td&gt;</strong> (célula de tabela),<br>
-                        <strong>&lt;th&gt;</strong> (célula de cabeçalho),<br>
-                        <strong>&lt;form&gt;</strong> (formulário),<br>
-                        <strong>&lt;input&gt;</strong> (campo de entrada),<br>
-                        <strong>&lt;label&gt;</strong> (rótulo para campos),<br>
-                        <strong>&lt;button&gt;</strong> (botão de ação).<br>
-                    </div>
-                </p>
-            </div>
         </section>
         <hr>
         <!--Section 2: inputs e tipos-->
@@ -121,7 +78,7 @@
 
             <!--Input radio-->
             <h2>Inputs radio: Qual dessas linguagens é linguagem de marcação?</h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <input type="radio" name="pergunta2" id="p1a">
                 <label for="p1a">HTML5</label>
                 <br>
@@ -134,7 +91,7 @@
 
             <!--Input check-->
             <h2>Multipla escolha: Qual dessas linguagens são linguagens de programação?</h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <input type="checkbox" name="perguntaCheck" id="p2check1">
                 <label for="p2check1">HTML5</label>
                 <br>
@@ -157,21 +114,21 @@
 
             <!--Input date-->
             <h2>Input date: Em qual ano o HTML5 foi criado?</h2>
-            <form action="">
-                <label for="Date">Data:</label>
-                <input type="date" name="pergunta2" id="p2Date">
+            <form action="arquivo.php" method="POST">
+                <label for="pergunta2Data">Data:</label>
+                <input type="date" name="pergunta2Data" id="pergunta2Data">
             </form>
 
             <!--Input text-->
             <h2>Input text: Digite o que significa HTML:</h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <label for="p2Text">Digite o que significa HTML:</label>
                 <input type="text" placeholder="Digite a sigla" id="p2Text">
             </form>
 
             <!--Input tipo range-->
             <h2>Input range: Qual é seu nivel em cada linguagem abaixo:</h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <input type="range" name="HTML5" id="p2Range1">
                 <label for="p2Range1">HTML5</label>
                 <br>
@@ -194,8 +151,8 @@
 
             <!--Input color-->
             <h2>Input color: Selecione as cores de cada linguagem:</h2>
-            <form action="">
-                <input type="color" name="" id="p2Color1">
+            <form action="arquivo.php" method="POST">
+                <input type="color" name="teste" id="p2Color1">
                 <label for="p2Color1">HTML5</label>
                 <br>
                 <input type="color" id="p2Color2">
@@ -214,15 +171,15 @@
 
             <!--Input URL-->
             <h2>Input URL:</h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <label for="p2Url">Digite a URL:</label>
                 <input type="text" placeholder="Digite sua URL" name="url" id="p2Url">
             </form>
 
             <!--input uploud-->
             <h2>Input file</h2>
-            <form action="">
-                <label for="p2file">Faça o uploud:</label>
+            <form action="arquivo.php" method="POST">
+                <label for="p2File">Faça o uploud:</label>
                 <input type="file" name="uploud" id="p2File">
             </form>
 
@@ -245,7 +202,7 @@
         <section id="formulario" style="background-color: #a6aa56;">
             <h2>Formulários: Faça cadrastro e entre na cominudade de desenvolvedores que mais entende de tecnologia.
             </h2>
-            <form action="">
+            <form action="arquivo.php" method="POST">
                 <fieldset style="width: 500px;">
                     <legend>Cadastro de Usuários</legend>
 
@@ -259,7 +216,7 @@
                     <input type="text" placeholder="Digite seu sobrenome" name="sobrenome" id="sobrenome" required>
                     <br> <br>
                     <label for="p3Data">Data Nascimento</label>
-                    <input type="datetime" placeholder="Digite data nascimento" name="pergunta3" id="p3Data">
+                    <input type="date" name="pergunta3" id="p3Data">
                     <br> <br>
                     <label for="email">E-mail:</label>
                     <input type="email" placeholder="Digite seu e-mail" name="email" id="email" required>
@@ -319,43 +276,6 @@
             </form>
         </section>
 
-        <!--Section 4: Imagens e videos-->
-        <section id="imagens" style="background-color: #b4b969;">
-            <h2>Imagens das principais tecnologias usadas no desenvolvimento web:</h2>
-            <div style="display: flex; justify-content: center; align-items: center;">
-                <figure>
-                    <img src="img/logo-html.png" style="width: 150px;" alt="logo HTML">
-                    <figcaption style="text-align: center;">HTML5</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/logo-css.png" style="width: 123px;" alt="logo CSS">
-                    <figcaption style="text-align: center;">CSS3</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/logo-js.webp" style="width: 160px;" alt="logo JavaScript">
-                    <figcaption style="text-align: center;">JavaScript</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/logo-java.png" style="width: 150px;" alt="logo Java">
-                    <figcaption style="text-align: center;">Java</figcaption>
-                </figure>
-                <figure>
-                    <img src="img/logo-php.png" style="width: 150px;" alt="logo Php">
-                </figure>
-                <figcaption style="text-align: center;">Php</figcaption>
-                </figure>
-                <figure><img src="img/logo_node.png" style="width: 150px;" alt="logo Node.js"></figure>
-                <figcaption style="text-align: center;">Node.js</figcaption>
-            </div>
-
-            <div style="display: flex; justify-content: center; gap: 10%;">
-                <img style="width: 560px;" src="img/images.jpeg" alt="Imagem de fundo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/1-w1RfGIov4?si=VKVZcIFZxHnNy7_n"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
 
         <!--section 4: listas-->
         <section id="Listas" style="background-color: #dfdb9c;">
@@ -414,7 +334,7 @@
         <!--Section 5 Tabelas-->
         <section id="tabelas">
             <h2>Tabelas:</h2>
-            <table border="1" style="width: 100%; text-align: center;">
+            <table>
                 <tr>
                     <th>Front-end</th>
                     <th>Back-end</th>
@@ -463,7 +383,7 @@
 
             <!--Segunda tabela-->
             <h2>Tabela de pontuação</h2>
-            <table colspan="4" border="1" style="text-align: center; width: 50%;">
+            <table>
                 <thead>
                     <tr>
                         <th>Nome</th>
@@ -522,8 +442,8 @@
         <!--Section 6 links para outras paginas-->
         <section id="links">
             <h2>Links: Acesse algumas das paginas que ensina melhor programação:</h2>
-            <a class="links" class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
-                target="_blank">Tutorial de HTML5</a>
+            <a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">Tutorial de
+                HTML5</a>
 
             <a class="links" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">Tutorial de CSS3
             </a>
@@ -562,19 +482,13 @@
                 <a href="#">home</a>
             </div>
             <br><br>
-
-            <!--span é uma tag inline usada para marcar ou estilizar partes pequenas de texto ou elementos, sem quebrar a linha.-->
-            <h3>Meu nome é Brenno Ale<span style="color: rgb(72, 203, 197);">ncar,</span> sou um desenvol<span
-                    style="color: rgb(24, 191, 24);">vedor</span> Front-<span
-                    style="color: rgb(169, 72, 72);">end</span></h3>
         </section>
 
+
         <!--Section 8: Iframes-->
-        <section id="iframes">
-            <iframe src="index.html" frameborder="0" width="50%" height="300px">
-            </iframe>
-            <br><br>
-            <iframe src="https://www.cursoemvideo.com/" width="50%" height="300px" frameborder="0"></iframe>
+        <section>
+            <h2>Teste</h2>
+            <iframe src="https://www.cursoemvideo.com/"></iframe>
         </section>
 
         <!--Section 9: Audio-->
@@ -585,8 +499,16 @@
         </section>
 
         <!--Tag de script-->
-        <script src=""></script>
+        <script src="#"></script>
     </main>
+
+    <div>
+        <h2>teste</h2>
+        <figure>
+            <figcaption>teste</figcaption>
+        <img src="img/images.jpeg" alt="teste">
+        </figure>
+    </div>
 
     <footer>
         <p>Site criado por Brenno Alencar</p>
